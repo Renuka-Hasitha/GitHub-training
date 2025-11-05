@@ -26,4 +26,6 @@ git pull
 I can see all the changes locally.
 16.But if u make changes locally you have to again add,commit and push the file to git.
 
+I will add this line in the remote and use git pull locally to understand the working
+
 
