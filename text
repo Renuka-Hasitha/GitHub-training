@@ -1,2 +1,29 @@
 Day1 of github training
 Today we learnt about git clone,git status,git add filename,git commit -m,git restore --staged "filename" and git pull
+1.To create keys->ssh-keygen -t rsa on the local system 
+You will have .ssh dir where the public and private keys are stored
+2.Open the public key file and copy it 
+3.In the github open->settings->ssh and GPG keys
+Add new ssh->paste the public key and give a title.For the pulbic key move the cursor to the content only.
+And the key is given from local to remote.local means laptop and remote means github
+4.Git has the capacity to match the private key
+5.w.r.t github downloading means clone
+6.open the repo you want and go to code dropbox you will get https and ssh links
+7.use git clone to download the repo to your local
+8.git clone (https link or ssh)
+9.https will ask for creds whereas ssh will clone to the local system.
+10.git clone (link) your custom file name  (optional)
+11.let's say you added one more file to the repo locally
+git add .
+This will add all the files to the remote
+see git status -->green color
+12.git commit -m "Your message"
+13.git push this will push the locally added files to the remote
+14.I dont want to push one private file.Use 
+gid restore --staged "filename" -->Do this step after add before commit only.After push this step is of no use
+15.Someone made some changes to the remote file I want those locally.I can use,
+git pull
+I can see all the changes locally.
+16.But if u make changes locally you have to again add,commit and push the file to git.
+
+
