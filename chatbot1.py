@@ -8,6 +8,9 @@ def greet():
     name = input("Enter your name: ")
     time1 = datetime.now().hour
 
+
+
+
     if 5 <= time1 <= 11:
         print(f"Good Morning {name.capitalize()}! What do you want to talk about today?")
     elif 12 <= time1 <= 15:
