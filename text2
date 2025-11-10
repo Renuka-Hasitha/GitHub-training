@@ -1,0 +1,59 @@
+Day2 of training:
+
+To go to deleted or before modified part/to show the commit history:
+
+On the remote press commit
+On the local-> git log or git log --oneline or git log --oneline -5 
+
+To remove commit 1 step back:
+git reset     (soft,hard,mixed)
+git reset --soft HEAD~1  (1=count of commit,It will go one commit back.)
+
+To revert the commit back 
+git pull --force or git pull 
+
+If you make changes locally and want to retrieve the data from remote we must use,
+git stash and git pull --force
+
+Git Branch:
+git branch ->*main
+
+To create a branch:
+git checkout -b hasitha (this creates a branch called hasitha)
+
+To make it the working branch:
+git checkout hasitha (This will make the working branch)
+
+git push origin hasitha 
+git push --set-upstream origin hasitha ------>>>> This is used to push branch files to main pull requests
+
+In the remote you can find a pull request from the hasitha branch
+Merge the 2 branches.This is used to merge the files of main with hasitha and hasitha with main.It only works at that point.
+
+
+How to merge 2 repos?
+
+Create 2 repos remotely.With same file names and some content on both repos
+1.Internal
+2.External
+
+Clone the internal repo locally.Remotely add the external repo to your internal repo.
+
+cmd-->git remote set-url origin https://github.com/Renuka-Hasitha/locally_creted.git
+
+This adds the repo remotely.Now run,
+
+git fetch --all -->this will fetch all the related meta data
+git cherry-pick (copy sha add from commits of internal) 
+
+Now the contents of external get over written by the internal repo.
+eg:both repos have abc.py file
+now,in the internal repo we have->print("Hello")
+in the external we have-->print("Hello");print("World")
+
+So when we fetch all and do cherry pick we get
+print("Hello");print("World")
+
+
+
+
